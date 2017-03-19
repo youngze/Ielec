@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.young.elec.domain">
+	<class name="com.young.elec.domain.ElecText" table="Elec_Text">
+		<id name="textID" type="java.lang.Integer">
+			<column name="textID" not-null="true"/>
+		<generator class="native"></generator>
+		</id>
+		<property name="textName" type="java.lang.String">
+			<column name="textName" />
+		</property>
+		<property name="textDate" type="java.util.Date">
+			<column name="textDate" />
+		</property>
+		<property name="textRemark" type="java.lang.String">
+			<column name="textRemark"/>
+		</property>
+	</class>
+</hibernate-mapping>
